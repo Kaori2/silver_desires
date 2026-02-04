@@ -7,6 +7,7 @@ type RatingProps = {
 
 export default function Rating({ rating }: RatingProps) {
   return (
+    <div className="flex width-full justify-center">
     <div className="flex gap-1">
       {[1, 2, 3, 4, 5].map((star) => (
         <FontAwesomeIcon
@@ -17,6 +18,7 @@ export default function Rating({ rating }: RatingProps) {
           }
         />
       ))}
+    </div>
     </div>
   )
 }

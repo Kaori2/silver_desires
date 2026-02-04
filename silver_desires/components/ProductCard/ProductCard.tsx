@@ -24,11 +24,11 @@ export default function ProductCard({ product }: ProductCardProps) {
       <Price price={product.price} />
 
       <div>
-        <p className="text-sm text-gray-500">{product.category}</p>
-        <h3 className="font-medium">{product.name}</h3>
+        <p className="text-sm text-zinc-500">{product.category}</p>
+        <h3 className="font-medium text-black">{product.name}</h3>
       </div>
 
-      <div className="flex justify-between items-center w-full mt-4 h-auto">
+      <div className="flex justify-between items-center w-full mt-4 h-10">
         <QuantitySelector />
         <BuyButton />
       </div>
